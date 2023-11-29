@@ -1,0 +1,146 @@
+body{
+    background: linear-gradient(rgb(103, 72, 47),rgb(24, 18, 18));
+    height:100vh; 
+  }
+.container {
+      position: fixed;
+      padding: 20px;
+       width: 40%;
+      display: flex;
+      gap: 10px;
+}
+.container a{
+      text-decoration: none;
+      color: rgb(179, 184, 188);
+}
+.car {
+      background-color: rgba(54, 44, 35, 0.516);
+      height: 50px;
+      width: 50px;
+      flex: 1;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(186, 189, 192);
+}
+    
+.car:hover{
+      flex: 2;
+      background-color: #4a240d;
+      cursor: pointer;
+      color: black;
+}
+h2{
+    color: antiquewhite;
+     font-size: 30px;
+     padding: 100px 500px;
+     margin: 0 40px;
+     text-align: center;
+}
+.contain {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 90px;
+    margin: 0 60px;
+  }
+  
+  .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 22em;
+    max-width: 80%;
+    padding: 2rem 0;
+    background: #FFF;
+    box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
+    transition: all 0.35s ease;
+  }
+  
+  .card::before, .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: orange;
+    height: 4px;
+  }
+  
+  .card::before {
+    width: 0;
+    opacity: 0;
+    transition: opacity 0 ease, width 0 ease;
+    transition-delay: 0.5s;
+  }
+  
+  .card::after {
+    width: 100%;
+    background: white;
+    transition: width 0.5s ease;
+  }
+  
+  .card .content {
+    font-size: 20px;
+    width: 18em;
+    max-width: 80%;
+  }
+  
+  .card .logo {
+    margin: 0 0 1em;
+    width: 10.625em;
+    transition: all 0.35s ease;
+  }
+  
+  .card .h6 {
+    color: #999;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  
+  .card .hover_content {
+    overflow: hidden;
+    max-height: 0;
+    transform: translateY(1em);
+    transition: all 0.55s ease;
+  }
+  
+  .card .hover_content p {
+    margin: 1.5em 0 0;
+    color: #6E6E70;
+    line-height: 1.4em;
+  }
+  
+  .card:hover {
+    width: 24em;
+    box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
+  }
+  
+  .card:hover::before {
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease, width 0.5s ease;
+    transition-delay: 0;
+  }
+  
+  .card:hover::after {
+    width: 0;
+    opacity: 0;
+    transition: width 0 ease;
+  }
+  
+  .card:hover .logo {
+    margin-bottom: 0.5em;
+  }
+  
+  .card:hover .hover_content {
+    max-height: 10em;
+    transform: none;
+  }

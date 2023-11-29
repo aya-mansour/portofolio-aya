@@ -1,0 +1,110 @@
+body{
+    background: linear-gradient(rgb(103, 72, 47),rgb(24, 18, 18));
+    height:100vh; 
+  }
+.container {
+     
+      padding: 20px;
+       width: 40%;
+      display: flex;
+      gap: 10px;
+}
+.container a{
+      text-decoration: none;
+      color: rgb(179, 184, 188);
+}
+.car {
+      background-color: rgba(54, 44, 35, 0.516);
+      height: 50px;
+      width: 50px;
+      flex: 1;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(186, 189, 192);
+}
+    
+.car:hover{
+      flex: 2;
+      background-color: #4a240d;
+      cursor: pointer;
+      color: black;
+}
+.card {
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 100px 360px;
+  }
+  
+  .card:hover {
+    border-bottom: 5px solid rgb(190, 145, 61);
+    transform: scale(1.2);
+    transition: 1s ease-in-out;
+  }
+  
+  .header {
+    background-color: #997d67a9;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .body {
+    padding: 40px;
+  }
+  
+  .skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .skill-name {
+    width: 120px;
+    font-size: 16px;
+  }
+  
+  .html:hover {
+    color: blue;
+  }
+  
+  .css:hover {
+    color: purple;
+  }
+  
+  .js:hover {
+    color: red;
+  }
+  .bs:hover {
+    color: rgb(0, 145, 255);
+  }
+  .react:hover{
+    color: rgb(0, 221, 255);
+  }
+  
+  .skill-level {
+    width: 160px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+  }
+  
+  .skill-percent {
+    background-color: rgb(165, 114, 42);
+    height: 100%;
+  }
+  
+  .skill-percent-number {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  
